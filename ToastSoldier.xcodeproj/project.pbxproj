@@ -10,6 +10,7 @@
 		E4D5733D1AE9AB56004F8DD5 /* ToastSoldier.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D5733C1AE9AB56004F8DD5 /* ToastSoldier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4D573431AE9AB56004F8DD5 /* ToastSoldier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D573371AE9AB56004F8DD5 /* ToastSoldier.framework */; };
 		E4D5734A1AE9AB56004F8DD5 /* ToastSoldierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D573491AE9AB56004F8DD5 /* ToastSoldierTests.swift */; };
+		E4D573561AE9ACF1004F8DD5 /* ToastSoldier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D573551AE9ACF1004F8DD5 /* ToastSoldier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		E4D573421AE9AB56004F8DD5 /* ToastSoldierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToastSoldierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D573481AE9AB56004F8DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4D573491AE9AB56004F8DD5 /* ToastSoldierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastSoldierTests.swift; sourceTree = "<group>"; };
+		E4D573551AE9ACF1004F8DD5 /* ToastSoldier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastSoldier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,8 @@
 		E4D5732D1AE9AB55004F8DD5 = {
 			isa = PBXGroup;
 			children = (
-				E4D573391AE9AB56004F8DD5 /* ToastSoldier */,
-				E4D573461AE9AB56004F8DD5 /* ToastSoldierTests */,
+				E4D573391AE9AB56004F8DD5 /* Source */,
+				E4D573461AE9AB56004F8DD5 /* Tests */,
 				E4D573381AE9AB56004F8DD5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,12 +70,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E4D573391AE9AB56004F8DD5 /* ToastSoldier */ = {
+		E4D573391AE9AB56004F8DD5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				E4D5733C1AE9AB56004F8DD5 /* ToastSoldier.h */,
+				E4D573551AE9ACF1004F8DD5 /* ToastSoldier.swift */,
 				E4D5733A1AE9AB56004F8DD5 /* Supporting Files */,
 			);
+			name = Source;
 			path = ToastSoldier;
 			sourceTree = "<group>";
 		};
@@ -85,12 +89,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E4D573461AE9AB56004F8DD5 /* ToastSoldierTests */ = {
+		E4D573461AE9AB56004F8DD5 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				E4D573491AE9AB56004F8DD5 /* ToastSoldierTests.swift */,
 				E4D573471AE9AB56004F8DD5 /* Supporting Files */,
 			);
+			name = Tests;
 			path = ToastSoldierTests;
 			sourceTree = "<group>";
 		};
@@ -209,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D573561AE9ACF1004F8DD5 /* ToastSoldier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +329,7 @@
 		E4D5734E1AE9AB56004F8DD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +339,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		E4D5734F1AE9AB56004F8DD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -399,6 +408,7 @@
 				E4D5734F1AE9AB56004F8DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4D573501AE9AB56004F8DD5 /* Build configuration list for PBXNativeTarget "ToastSoldierTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +417,7 @@
 				E4D573521AE9AB56004F8DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
