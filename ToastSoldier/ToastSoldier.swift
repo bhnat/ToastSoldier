@@ -53,7 +53,7 @@ func centerPointForPosition(position: AnyObject, toast: UIView, inView: UIView) 
     return centerPointForPosition(ToastPositionDefault, toast, inView)
 }
 
-extension UIView {
+public extension UIView {
     
     func makeToast(position pos: AnyObject = "center", message msg: String = "") {
         var existToast = objc_getAssociatedObject(self, &ToastActivityView) as! UIView?
