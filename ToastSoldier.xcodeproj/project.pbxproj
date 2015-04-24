@@ -77,8 +77,7 @@
 				E4D573551AE9ACF1004F8DD5 /* ToastSoldier.swift */,
 				E4D5733A1AE9AB56004F8DD5 /* Supporting Files */,
 			);
-			name = Source;
-			path = ToastSoldier;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		E4D5733A1AE9AB56004F8DD5 /* Supporting Files */ = {
@@ -95,8 +94,7 @@
 				E4D573491AE9AB56004F8DD5 /* ToastSoldierTests.swift */,
 				E4D573471AE9AB56004F8DD5 /* Supporting Files */,
 			);
-			name = Tests;
-			path = ToastSoldierTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		E4D573471AE9AB56004F8DD5 /* Supporting Files */ = {
@@ -164,7 +162,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = "Tryon Solutions";
+				ORGANIZATIONNAME = "MiTR Apps";
 				TargetAttributes = {
 					E4D573361AE9AB56004F8DD5 = {
 						CreatedOnToolsVersion = 6.3;
@@ -334,7 +332,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ToastSoldier/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,7 +349,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ToastSoldier/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,7 +368,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ToastSoldierTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -383,7 +381,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ToastSoldierTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
